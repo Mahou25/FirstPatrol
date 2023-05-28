@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    layout_width="match_parent"
+    layout_height="match_parent>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <!--Champ pour le nom de la patrouille-->
+        <EditText
+            android:id="@+id/nomPatrouille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ma Patrouille" />
+
+        <!-- Champ pour le nom de l'employé -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittext_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez votre nom" />
+
+        <!-- Champ pour les prénoms de l'employé -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prénoms:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittext_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez vos prénoms" />
+
+        <!-- Champ pour le mode de patrouille (véhicule ou à pied) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode de patrouille (Véhicule, à pied):"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittext_patrol_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez le mode de patrouille (Véhicule, à pied)" />
+
+        <!-- TextView pour afficher la date -->
+        <TextView
+            android:id="@+id/textview_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textStyle="bold" />
+
+        <!-- TextView pour afficher l'heure de départ -->
+        <TextView
+            android:id="@+id/textview_departure_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heure de départ:"
+            android:textStyle="bold" />
+
+        <!-- TextView pour afficher l'heure de fin -->
+        <TextView
+            android:id="@+id/textview_arrival_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heure de fin:"
+            android:textStyle="bold" />
+
+        <!-- Champ pour le numéro de "Row" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numéro de Row:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittext_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez le numéro de Row" />
+
+        <!-- Champ pour le choix du "KP" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choix du KP (8pcs ou 10pcs):"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_kp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/kp_choices" />
+
+        <!-- Champ pour la cellule de départ -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location (ON/OFFSHORE) - Départ:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittext_location_departure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez la cellule de départ" />
+
+        <!-- Champ pour la cellule d'arrivée -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location (ON/OFFSHORE) - Arrivée:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittext_location_arrival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez la cellule d'arrivée" />
+
+        <!-- Champ pour le choix du mode de patrouille -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conducted by vehicle, water vessel or foot: Vehicle, foot"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittext_patrol_mode_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez le mode de patrouille (Vehicle, foot)" />
+
+        <!-- TextView pour afficher le GPS -->
+        <TextView
+            android:id="@+id/textview_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS:"
+            android:textStyle="bold" />
+
+        <!-- Bouton pour commencer la patrouille -->
+
+        <!-- Tableau pour la liste des items -->
+        <!--    <Button-->
+        <!--        android:id="@+id/button_start_patrol"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="Commencer la patrouille" />-->
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- En-tête du tableau -->
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Items"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YES"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Commentaires"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <!-- Ligne pour chaque item -->
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Leaks or spills" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_leaks_spills_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_leaks_spills_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edittext_leaks_spills_comments"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Entrez des commentaires" />
+            </TableRow>
+
+            <!-- Répéter les lignes pour les autres items -->
+
+        </TableLayout>
+
+        <!-- Bouton pour enregistrer la patrouille -->
+        <Button
+            android:id="@+id/button_save_patrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer la patrouille" />
+
+    </LinearLayout>
+
+</ScrollView>

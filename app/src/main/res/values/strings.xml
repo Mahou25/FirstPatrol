@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FirstPatrol</string>
+    //Heading
+    <string name="heading_one">Inspection Report Analyst</string>
+    <string name="heading_two">Database Analysis Specialist.</string>
+
+    //Description
+    <string name="desc_one">Create and share a detailed and accurate inspection report in a timely manner.</string>
+    <string name="desc_two">Create and access reported issues database for analysis.</string>
+
+    <string-array name="kp_choices">
+        <item>8pcs</item>
+        <item>10pcs</item>
+    </string-array>
+
+</resources>

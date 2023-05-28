@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:context=".DossierInspection">
+
+    <!--Nommer le dossier d'inspection-->
+    <EditText
+        android:id="@+id/nomInspection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mon Dossier d'Inspection"
+        android:textStyle="bold"/>
+
+    <!-- Bouton de démarrage de patrouille -->
+    <Button
+        android:id="@+id/button_start_patrol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start a patrol" />
+
+    <!-- Ajoutez ici d'autres éléments de la vue du dossier d'inspection -->
+
+        <ListView
+            android:id="@+id/listPatrouilles"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/btnFinInspection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End inspection"
+        android:layout_marginLeft="250dp"
+        tools:ignore="MissingConstraints" />
+
+</LinearLayout>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="titleImage" type="id" />
+    <item name="texttitle" type="id" />
+    <item name="textdescription" type="id" />
+    <item name="edittext_name" type="id" />
+    <item name="edittext_firstname" type="id">edittext_firstname</item>
+    <item name="edittext_patrol_mode" type="id">edittext_patrol_mode</item>
+    <item name="textview_date" type="id">textview_date</item>
+    <item name="textview_departure_time" type="id">textview_departure_time</item>
+    <item name="textview_arrival_time" type="id">textview_arrival_time</item>
+    <item name="edittext_row" type="id">edittext_row</item>
+    <item name="spinner_kp" type="id">spinner_kp</item>
+    <item name="edittext_location_departure" type="id">edittext_location_departure</item>
+    <item name="edittext_location_arrival" type="id">edittext_location_arrival</item>
+    <item name="edittext_patrol_mode_choice" type="id">edittext_patrol_mode_choice</item>
+    <item name="textview_gps" type="id">textview_gps</item>
+    <item name="button_start_patrol" type="id">button_start_patrol</item>
+    <item name="checkbox_leaks_spills_yes" type="id">checkbox_leaks_spills_yes</item>
+    <item name="checkbox_leaks_spills_no" type="id">checkbox_leaks_spills_no</item>
+    <item name="edittext_leaks_spills_comments" type="id">edittext_leaks_spills_comments</item>
+    <item name="button_save_patrol" type="id">button_save_patrol</item>
+    <item name="gpsTextView" type="id">gpsTextView</item>
+    <item name="dateTextView" type="id">dateTextView</item>
+    <item name="heureDepartTextView" type="id">heureDepartTextView</item>
+    <item name="heureFinTextView" type="id">heureFinTextView</item>
+    <item name="nomEditText" type="id">nomEditText</item>
+    <item name="prenomEditText" type="id">prenomEditText</item>
+    <item name="rowEditText" type="id">rowEditText</item>
+    <item name="kpSpinner" type="id">kpSpinner</item>
+    <item name="locationEditText" type="id">locationEditText</item>
+    <item name="leaksCheckBox" type="id">leaksCheckBox</item>
+    <item name="demarrerButton" type="id">demarrerButton</item>
+    <item name="finButton" type="id">finButton</item>
+    <item name="enregistrerButton" type="id">enregistrerButton</item>
+</resources>
